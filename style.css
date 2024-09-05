@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative; 
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1528605248644-14dd04022da1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjUyOXwwfDF8c2VhcmNofDJ8fHJlc3RhdXJhbnR8ZW58MHx8fHwxNjkwMDA3NTQ3fDA&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1; 
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .nav-links li a:hover{
+    text-decoration: underline;
+    border-bottom:1px solid rgb(41, 212, 41);
+    color:rgb(41, 212, 41);
+    transition: 1s ease ;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.cta-button:hover{
+    background-color: #e5533d;
+    transition:0.3s ease;
+}
+
+.about-section, .menu-section, .contact-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f1faee;
+}
+
+.about-section h2, .menu-section h2, .contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#about {
+    padding: 50px;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about h3 {
+    margin-top: 30px;
+    color: #333;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: justify;
+    font-size: 1.1em;
+    color: #555;
+}
+
+
+.menu-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    padding-bottom: 20px;
+}
+
+.menu-item:hover{
+    transform:scale(1.05);
+    transition:0.3s ease-in-out;
+}
+.menu-item h3 {
+    margin-top: 0;
+}
+
+.checkout-btn {
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 80%;
+    text-align: center;
+}
+
+.checkout-btn:hover {
+    background-color: #e5533d;
+}
+
+.footer {
+    background-color: #1d3557;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* .dish-1{
+    background-image:url('grilled.jpeg');
+} */
+
+.menu-item img{
+    width: 400px;
+    height:300px;
+    /* width:max-content; */
+}
+
